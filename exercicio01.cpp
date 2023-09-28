@@ -134,7 +134,7 @@ string obterNomePassageiro(const vector<Viagem> &viagens)
     // Encontra a data da passagem
     for (const Viagem &viagem : viagens)
     {
-        for(const Passagem &passagem : viagem.passagens)
+        for (const Passagem &passagem : viagem.passagens)
         {
             if (passagem.data == dataViagem)
             {
@@ -149,7 +149,7 @@ string obterNomePassageiro(const vector<Viagem> &viagens)
     }
     else
     {
-        return "Não encontrado viagens na data especificada";       
+        return "Não encontrado viagens na data especificada";
     }
 
     cout << "Digite o número da viagem: ";
